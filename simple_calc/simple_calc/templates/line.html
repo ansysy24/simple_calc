@@ -1,0 +1,15 @@
+<form method="post" action=".">
+    {% csrf_token %}
+    <input name="numbers" type="text"/>
+
+
+    <select name="operator">
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+    </select>
+
+    <input name="submit" type="submit"/>
+</form>
+<h1 title="result"> {{result}} </h1>
